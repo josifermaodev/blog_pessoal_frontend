@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Navbar() {
     return (
@@ -5,7 +6,9 @@ function Navbar() {
             <div className=" flex justify-center items-center bg-gradient-to-r from-blue-500 to-green-500 text-white h-15">
                 <div className="container flex justify-between">
                     <div>
-                        <a className="hover:text-blue-950 text-lg font-bold" href="#">Blog Pessoal</a>
+                        <Link to='/home' className="hover:text-blue-950 text-lg font-bold">
+                            Blog Pessoal
+                        </Link>
                     </div>
                     <div>
                         <nav>
