@@ -26,8 +26,8 @@ function Navbar() {
                         <nav>
                             <ul className="flex gap-5 items-center text-lg font-bold">
                                 <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1"><a className="hover:text-blue-950" href="#">Postagens</a></li>
-                                <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1"><a className="hover:text-blue-950" href="#">Temas</a></li>
-                                <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1"><a className="hover:text-blue-950" href="#">Cadastrar tema</a></li>
+                                <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1"><Link to='/temas' className='hover:text-blue-950'>Temas</Link></li>
+                                <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1"><Link to='/cadastrartema' className='hover:text-blue-950'>Cadastrar tema</Link></li>
                                 <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1"><a className="hover:text-blue-950" href="#">Perfil</a></li>
                                 <li className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-950 after:transition-all after:duration-300 hover:after:w-full pb-1">
                                     <Link to="" onClick={logout} className="hover:text-blue-950">Sair</Link>

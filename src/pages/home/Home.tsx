@@ -1,7 +1,7 @@
 
 function Home() {
     return (
-        <div className="flex justify-center bg-gradient-to-r from-blue-500 to-green-500 py-20">
+        <div className="flex justify-center bg-gradient-to-r from-blue-500 to-green-500">
             <div className="container grid grid-cols-2 text-white md:max-lg:grid-cols-1">
                 <div className="flex flex-col items-center justify-center gap-4 py-4">
                     <h2 className="text-5xl font-bold">Seja Bem Vinde!</h2>

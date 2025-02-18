@@ -5,7 +5,7 @@ function Footer() {
 
     return (
         <>
-            <div className="flex justify-center bg-gradient-to-r from-blue-500 to-green-500 text-white bottom-0 left-0">
+            <div className="flex justify-center w-full bg-gradient-to-r from-blue-500 to-green-500 text-white fixed bottom-0 left-0">
                 <div className="container flex flex-col items-center py-4">
                     <p className="text-lg font-bold">Blog Pessoal Josiane | Copyright: {data}</p>
                     <p className="text-lg">Acesse minhas redes sociais</p>
