@@ -64,8 +64,6 @@ function Cadastro() {
     setIsLoading(false);
   }
 
-  console.log(JSON.stringify(usuario));
-  console.log(confirmarSenha);
   return (
     <>
       <div
