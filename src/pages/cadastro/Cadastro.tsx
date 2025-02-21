@@ -4,6 +4,7 @@ import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 import Usuario from '../../models/Usuario';
 import { cadastrarUsuario } from '../../services/Service';
 import { RotatingLines } from 'react-loader-spinner';
+import { ToastAlerta } from '../../utils/ToastAlerta';
 
 function Cadastro() {
   const navigate = useNavigate();
@@ -49,14 +50,12 @@ function Cadastro() {
 
       try {
         await cadastrarUsuario('/usuarios/cadastrar', usuario, setUsuario);
-        alert('Usuário Cadastrado com sucesso!');
+        ToastAlerta("Usuário foi Cadastrado com sucesso!", "sucesso");
       } catch (error) {
-        alert('Erro ao cadastrar o Usuário!');
+        ToastAlerta("Erro ao cadastrar o Usuário!", "erro");        
       }
     } else {
-      alert(
-        'Dados do usuário estão inconsistentes! Verifique as informações e tente novamente.'
-      );
+      ToastAlerta("Os dados do Usuário estão inconsistentes!", "erro");
       setUsuario({ ...usuario, senha: '' });
       setConfirmarSenha('');
     }
@@ -70,7 +69,7 @@ function Cadastro() {
         className="grid grid-cols-1 lg:grid-cols-2 h-screen 
             place-items-center font-bold"
       >
-        <div className="fundoCadastro hidden lg:block"></div>
+        <div className="fundoCadastro hidden lg:block rounded-r-[100px]"></div>
         <form
           className="flex justify-center items-center flex-col w-2/3 gap-3"
           onSubmit={cadastrarNovoUsuario}
