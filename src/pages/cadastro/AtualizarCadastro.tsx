@@ -11,6 +11,8 @@ function AtualizarCadastro() {
   const navigate = useNavigate();
   const { usuario, handleLogout } = useContext(AuthContext);
   const token = usuario.token;
+
+  
   
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [usuarioAtualizado, setUsuarioAtualizado] = useState<Usuario>({} as Usuario);
