@@ -76,7 +76,7 @@ function AtualizarCadastro() {
           />
         </div>
         <div className="flex flex-col w-full">
-          <label htmlFor="usuario">Usuário:</label>
+          <label htmlFor="usuario">Email:</label>
           <input
             type="text"
             id="usuario"
@@ -87,16 +87,18 @@ function AtualizarCadastro() {
           />
         </div>
         <div className="flex flex-col w-full">
-          <label htmlFor="senha">Senha:</label>
-          <input
-            type="text"
-            id="senha"
-            name="senha"
-            className="border-2 border-slate-700 rounded-full p-2"
-            value={usuarioAtualizado.senha}
-            onChange={atualizarEstado}
-          />
+            <label htmlFor="senha">Senha:</label>
+            <input
+                type="password" // Alterado para ocultar a senha
+                id="senha"
+                name="senha"
+                className="border-2 border-slate-700 rounded-full p-2"
+                placeholder="Digite a nova senha" // Adicionado para orientar o usuário
+                value={usuarioAtualizado.senha || ""} // Evita preencher com senha criptografada
+                onChange={atualizarEstado}
+            />
         </div>
+
         <div className="flex flex-col w-full">
           <label htmlFor="foto">Foto:</label>
           <input
