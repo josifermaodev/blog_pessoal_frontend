@@ -16,6 +16,7 @@ import { ToastContainer } from "react-toastify"
 
 
 import 'react-toastify/dist/ReactToastify.css';
+import AtualizarCadastro from "./pages/cadastro/AtualizarCadastro"
 
 
 
@@ -43,6 +44,7 @@ function App() {
               <Route path="/editarpostagem/:id" element={<FormPostagem />} />
               <Route path="/deletarpostagem/:id" element={<DeletarPostagem />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/editarperfil" element={<AtualizarCadastro />} />
             </Routes>
           </div>
           <Footer />
