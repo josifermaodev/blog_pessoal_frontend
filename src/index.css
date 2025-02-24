@@ -1,2 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
+@theme {
+    --default-font-family: "Outfit", serif;
+    --font-dancing: "Dancing Script", serif;
+}
